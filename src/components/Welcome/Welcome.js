@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
 
-import Icon from '../Icon/Icon.js';
+import Icon from 'components/Icon/Icon.js';
 import useStyles from './useStyles.js';
 
 const Welcome = () => {

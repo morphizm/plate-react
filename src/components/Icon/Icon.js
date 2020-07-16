@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import dictonary from './dictionary';
+import dictonary from './dictionary.js';
 
 const Icon = (props) => {
   const {
