@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
 
+import Icon from '../Icon/Icon.js';
 import useStyles from './useStyles.js';
 
 const Welcome = () => {
@@ -8,6 +9,7 @@ const Welcome = () => {
 
   return (
     <div className={classes.root}>
+      <Icon name="fire" width="50px" height="50px" />
       <Switch>
         <Route exact path="/path">
           Path!
