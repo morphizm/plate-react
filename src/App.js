@@ -10,6 +10,8 @@ import { configureStore } from '@reduxjs/toolkit';
 import reducer from './slices/index.js';
 import ThemeProvider from './ThemeProvider.js';
 import Welcome from './components/Welcome/Welcome.js';
+import './assets/styles/styles.scss';
+// import 'fontsource-roboto';
 
 const App = () => {
   i18next

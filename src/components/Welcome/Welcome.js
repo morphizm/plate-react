@@ -6,6 +6,11 @@ import useStyles from './useStyles.js';
 
 const Welcome = () => {
   const classes = useStyles();
+  const [value, changeValue] = React.useState('');
+
+  const onChange = (e) => {
+    changeValue(e.target.value);
+  };
 
   return (
     <div className={classes.root}>
@@ -20,6 +25,8 @@ const Welcome = () => {
           <h1>Ho/Ho</h1>
           <br />
           <Link to="/path">Path</Link>
+          <br />
+          <input className={classes.input} value={value} onChange={onChange} />
         </Route>
       </Switch>
     </div>
